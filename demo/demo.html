@@ -1,0 +1,50 @@
+<!doctype html>  
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Slices.js</title>
+
+        <meta name="description" content="Randomize content in a playful way">
+        <meta name="author" content="Joel Söderström">
+        
+        <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        
+        <link rel="stylesheet" href="../css/slices.css">
+
+        <style>
+            html, body { height:100%; }
+        </style>
+    </head>
+    
+    <body>
+
+        <section id="slices" class="slices-ctn">
+            <ol>
+                <li style="background-image:url(images/starter1.jpg)"><span>Shrimps with toast and stuff</span></li>
+                <li style="background-image:url(images/starter2.jpg)"><span>Croque Monsieur</span></li>
+                <li style="background-image:url(images/starter3.jpg)"><span>Light Salad</span></li>
+            </ol>
+            <ol>
+                <li style="background-image:url(images/mc1.jpg)"><span>Steak</span></li>
+                <li style="background-image:url(images/mc2.jpg)"><span>Chicken</span></li>
+                <li style="background-image:url(images/mc3.jpg)"><span>Falafel</span></li>
+            </ol>
+            <ol>
+                <li style="background-image:url(images/desert1.jpg)"><span>Raspberry Pie</span></li>
+                <li style="background-image:url(images/desert2.jpg)"><span>Fruit cake</span></li>
+                <li style="background-image:url(images/desert3.jpg)"><span>Choclate cake</span></li>
+                <li style="background-image:url(images/desert4.jpg)"><span>Crepes</span></li>
+            </ol>
+        </section>
+
+        <script src="../js/slices.js"></script>
+
+        <script>
+            var rb = Slices.create(document.querySelector('#slices'));
+        </script>
+        
+    </body>
+</html>

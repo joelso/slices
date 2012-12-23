@@ -1,0 +1,57 @@
+/* Reset */
+
+p, ol, ul, li { padding: 0; margin: 0; }
+
+
+/* slices.js core styles */
+
+.slices-ctn {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.slices-ctn > ol, .slices-ctn > ul  {
+    /* js will change to "block" once initialized */
+    display: none; 
+}
+
+.slices-ctn li {
+    display: inline-block;
+    min-height:100px;
+    vertical-align: top;
+    /* Avoid inline-block space */
+    margin-right: -13px;
+}
+
+
+
+/* Additional styling for demo */
+
+body {
+    font-family: 'Shadows Into Light', serif;
+    font-size:28px;
+    background-color: #f1f1f1;
+    background: -webkit-radial-gradient(circle, #fff, #ccc);
+    background:    -moz-radial-gradient(circle, #fff, #ccc);
+    background:     -ms-radial-gradient(circle, #fff, #ccc);
+}
+
+.slices-ctn > ol {
+    border-bottom: 1px solid #333;    
+}
+
+.slices-ctn li {
+    height:200px;
+    line-height:200px;
+    background-size: cover;
+    text-align: center;
+}
+
+.slices-ctn li span {
+    padding: 0 5px;
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+
+
